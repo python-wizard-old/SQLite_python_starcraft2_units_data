@@ -1,0 +1,76 @@
+.databases
+databases
+;
+.databases;
+.quit
+CREATE TABLE COMPANY(
+   ID INT PRIMARY KEY     NOT NULL,
+   NAME           TEXT    NOT NULL,
+   AGE            INT     NOT NULL,
+   ADDRESS        CHAR(50),
+   SALARY         REAL
+);
+.tables
+create table company2(
+name text not null,
+salary real
+);
+.tables
+.quit
+.open sc2_data_copy.db
+list tables
+;
+help;
+.help
+select * from terran
+;
+select * from terran_units
+;
+select damage from terran_units;
+select Damage from terran_units;
+select DPSge from terran_units;
+select DPS from terran_units;
+.tables
+.tables
+.tables %t
+.tables t%
+select name from sqlite_schema where type = 'table'
+and name not like 'sqlite_%'
+order by 1;
+select name from sqlite_schema where type = 'table'
+and name not like 'sqlite_%';
+select * from sqlite_schema where type = 'table'
+and name not like 'sqlite_%';
+select * from terran_units;
+select unit_name from terran_units;
+select unit from terran_units;
+select name from terran_units;
+.schema terran_units
+pragma table_info('terran_units');
+select * from terran_units;
+select * from terran_units like S%;
+select * from terran_units where 'Unit name' like 'S%';
+select * from terran_units where 'Unit name' = 'Marine';
+select 'Unit name' from terran_units;
+select 'Supply' from terran_units;
+.headers on
+select * from terran_units;
+select "Supply", "Minerals" from terran_units;
+select "Unit name", "Supply", "Minerals" from terran_units;
+select "Unit name", "Supply", "Minerals" from terran_units
+where "Unit name" like 'S%';
+.mode column
+select * from terran_units;
+.TABLES
+.tables
+.schema protoss_units
+pragma table_info('terran_units')
+;
+.quit
+.tables
+select * from terran_units
+;
+.headers on
+.mode column
+select * from terran_units;
+.quit
